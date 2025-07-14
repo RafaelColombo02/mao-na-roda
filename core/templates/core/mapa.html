@@ -1,0 +1,8 @@
+<h2>Profissionais próximos para: {{ servico }}</h2>
+<ul>
+{% for prof in profissionais %}
+    <li><strong>{{ prof.nome }}</strong> - {{ prof.tipo_servico }} (Lat: {{ prof.latitude }}, Long: {{ prof.longitude }})</li>
+{% empty %}
+    <li>Nenhum profissional encontrado para esse serviço.</li>
+{% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+<h2>Login</h2>
+<form method="post">{% csrf_token %}
+    <input name="username" placeholder="Usuário" required>
+    <input name="password" type="password" placeholder="Senha" required>
+    <button type="submit">Entrar</button>
+    {% if error %}<p style="color:red;">{{ error }}</p>{% endif %}
+</form>
+<a href="{% url 'registro' %}">Não tem conta? Cadastre-se</a>
