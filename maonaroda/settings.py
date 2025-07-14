@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mao-na-roda'
 
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['mao-na-roda.onrender.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
