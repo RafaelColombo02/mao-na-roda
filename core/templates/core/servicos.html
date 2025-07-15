@@ -1,8 +1,55 @@
-<h2>Selecione um Serviço</h2>
-<div>
-    <form method="get" action="/mapa/"><button name="servico" value="eletrica">Elétrica</button></form>
-    <form method="get" action="/mapa/"><button name="servico" value="obras">Obras</button></form>
-    <form method="get" action="/mapa/"><button name="servico" value="eletronica">Eletrônica</button></form>
-    <form method="get" action="/mapa/"><button name="servico" value="informatica">Informática</button></form>
-    <form method="get" action="/mapa/"><button name="servico" value="gerais">Serviços Gerais</button></form>
+{% extends 'core/base.html' %}
+{% block title %}Serviços | Mão na Roda{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-8">
+    <div class="card shadow-sm">
+      <div class="card-body">
+          <h2 class="mb-4 text-center">Escolha o tipo de serviço</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4 text-center">
+            <div class="col">
+              <a href="/mapa/?servico=eletrica" class="text-decoration-none">
+                <div class="card shadow-lg py-4 h-100 border-0 d-flex flex-column align-items-center justify-content-center" style="background: #e3f2fd; min-height: 220px;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/2933/2933811.png" alt="Elétrica" style="width:64px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
+                  <div class="fw-bold text-dark fs-5">Elétrica</div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="/mapa/?servico=obras" class="text-decoration-none">
+                <div class="card shadow-lg py-4 h-100 border-0 d-flex flex-column align-items-center justify-content-center" style="background: #fff3e0; min-height: 220px;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1670/1670047.png" alt="Obras" style="width:64px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
+                  <div class="fw-bold text-dark fs-5">Obras</div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="/mapa/?servico=eletronica" class="text-decoration-none">
+                <div class="card shadow-lg py-4 h-100 border-0 d-flex flex-column align-items-center justify-content-center" style="background: #f3e5f5; min-height: 220px;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1674/1674291.png" alt="Eletrônica" style="width:64px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
+                  <div class="fw-bold text-dark fs-5">Eletrônica</div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="/mapa/?servico=informatica" class="text-decoration-none">
+                <div class="card shadow-lg py-4 h-100 border-0 d-flex flex-column align-items-center justify-content-center" style="background: #e8f5e9; min-height: 220px;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Informática" style="width:64px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
+                  <div class="fw-bold text-dark fs-5">Informática</div>
+                </div>
+              </a>
+            </div>
+            <div class="col">
+              <a href="/mapa/?servico=gerais" class="text-decoration-none">
+                <div class="card shadow-lg py-4 h-100 border-0 d-flex flex-column align-items-center justify-content-center" style="background: #fffde7; min-height: 220px;">
+                  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Serviços Gerais" style="width:64px; margin-bottom:16px; display:block; margin-left:auto; margin-right:auto;">
+                  <div class="fw-bold text-dark fs-5">Serviços Gerais</div>
+                </div>
+              </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
 </div>
+{% endblock %}

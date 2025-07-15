@@ -5,7 +5,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mao-na-roda'
 
 DEBUG = True
-ALLOWED_HOSTS = ['mao-na-roda.onrender.com']
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -49,8 +49,12 @@ WSGI_APPLICATION = 'maonaroda.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'maonaroda_yd9j',      # Altere para o nome do seu banco
+        'USER': 'rafaelcolombo02',            # Altere para seu usuário do banco
+        'PASSWORD': 'u2YbUCMQazoW9qHGGKUl4nbFr2znQl5j',          # Altere para sua senha do banco
+        'HOST': 'dpg-d1qpjq7diees73f60lag-a.oregon-postgres.render.com',          # Altere se o banco estiver em outro host
+        'PORT': '5432',               # Porta padrão do PostgreSQL
     }
 }
 
