@@ -53,7 +53,7 @@ DATABASES = {
         'NAME': 'maonaroda_yd9j',      # Altere para o nome do seu banco
         'USER': 'rafaelcolombo02',            # Altere para seu usuário do banco
         'PASSWORD': 'u2YbUCMQazoW9qHGGKUl4nbFr2znQl5j',          # Altere para sua senha do banco
-        'HOST': 'dpg-d1qpjq7diees73f60lag-a.oregon-postgres.render.com',          # Altere se o banco estiver em outro host
+        'HOST': 'dpg-d1qpjq7diees73f60lag-a/maonaroda_yd9j',          # Altere se o banco estiver em outro host
         'PORT': '5432',               # Porta padrão do PostgreSQL
     }
 }
